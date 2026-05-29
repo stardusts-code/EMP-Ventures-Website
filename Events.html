@@ -18,14 +18,11 @@
             <span><a href="mailto:info@empventure.co.za">info@empventure.co.za</a></span>
         </div>
     </div>
-
     <header class="header">
-        <div>
-            <img src="images/emp-logo-transparent.png" alt="EMP Ventures logo" class="logo" id="home">
-            <div class="logo-text">
-                <div class="logo-name">EMP Ventures</div>
-            </div>
-        </div>
+        <a href="index.html" class="brand">
+            <img src="images/emp-logo-transparent.png" alt="EMP Ventures logo" class="logo">
+            <span>EMP Ventures</span>
+        </a>
 
         <nav class="navbar" id="navbar">
             <ul class="nav-links">
@@ -34,32 +31,29 @@
                 <li class="dropdown">
                     <a href="Services.html">SERVICES</a>
                     <ul class="dropdown-menu">
-                        <li><a href="monitering.html">CCTV Monitoring</a></li>
                         <li><a href="Gaurding.html">Guarding</a></li>
+                        <li><a href="monitering.html">CCTV Monitoring</a></li>
                         <li><a href="Events.html">Event Security</a></li>
                         <li><a href="Services.html#specialized">Armed Escorts</a></li>
-                        <li><a href="Services.html#specialized">Cash in Transit</a></li>
+                        <li><a href="CashTransit.html">Cash in Transit</a></li>
                     </ul>
                 </li>
-                <li><a href="Gaurding.html">GUARDING</a></li>
                 <li class="dropdown">
                     <a href="Reaction.html">REACTION</a>
                     <ul class="dropdown-menu">
                         <li><a href="rapid.html">Auto Dispatch</a></li>
                         <li><a href="monitering.html">Off-site Monitoring</a></li>
                         <li><a href="Reaction.html">Armed Response</a></li>
-                        <li><a href="Reaction.html">Proactive Patrols</a></li>
+                        <li><a href="ProactivePatrols.html">Proactive Patrols</a></li>
                     </ul>
                 </li>
                 <li><a href="Contact.html">CONTACT US</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61579485742280" class="icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/emp-venture-" class="icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61579485742280" class="icon" aria-label="EMP Ventures on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/emp-venture-" class="icon" aria-label="EMP Ventures on LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
 
-        <div>
-            <a href="#quote" class="btn">Get a Quote</a>
-        </div>
+        <a href="#quote" class="btn">Get a Quote</a>
     </header>
 
     <main>
@@ -115,28 +109,34 @@
             </div>
             <a href="#quote" class="btn">Plan My Event Security</a>
         </section>
-
         <section class="quote" id="quote">
             <div class="quote-container">
                 <form action="mailto:tatumkunert444@gmail.com" method="POST" enctype="text/plain">
-                    <h3>Request Event Security</h3>
-                    <p>Share your event details and we will help you plan the right security coverage.</p>
+                    <h2>Request a Quote</h2>
+                    <p>Tell us what you need protected and we will help you choose the right service.</p>
+
                     <div class="input-group">
                         <input type="text" name="full_name" placeholder="Full Name" required>
-                        <input type="text" name="company" placeholder="Company or Event Name" required>
+                        <input type="text" name="company" placeholder="Company" required>
                         <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="input-group">
                         <input type="tel" name="phone" placeholder="Phone Number" required>
-                        <input type="text" name="event_location" placeholder="Event Location" required>
+                        <input type="text" name="address" placeholder="Street Address" required>
                         <select name="service" required>
                             <option value="">Select Service</option>
-                            <option>Event Security</option>
                             <option>Guarding Services</option>
+                            <option>CCTV Monitoring</option>
                             <option>Armed Response</option>
+                            <option>Event Security</option>
+                            <option>Armed Escorts</option>
+                            <option>Cash in Transit</option>
+                            <option>Proactive Patrols</option>
+                            <option>Auto Dispatch</option>
+                            <option>Off-site Monitoring</option>
                         </select>
                     </div>
-                    <textarea name="message" placeholder="Tell us the event date, guest count, venue, and security needs..." required></textarea>
+                    <textarea name="message" placeholder="Tell us about your security needs..." required></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -163,7 +163,7 @@
             </div>
 
             <div class="footer-col">
-                <h3>Emergency & Important</h3>
+                <h3>Emergency &amp; Important</h3>
                 <p><i class="fas fa-shield-alt"></i>SAPS: 10111</p>
                 <p><i class="fas fa-shield-alt"></i>Crime Stop: 08600 10111</p>
                 <p><i class="fas fa-shield-alt"></i>JMPD: 011 375 5918</p>

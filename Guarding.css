@@ -20,8 +20,16 @@ h1{
     z-index: 1000;
     /* padding: 20px 50px; */
     /* background: rgba(0,0,0,0.7); */
-    margin: -25px;
     padding: 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
 }
 .btn{
     padding: 10px 20px;
@@ -110,13 +118,13 @@ h1{
     top: 60px;
     background: #111827;
     max-width: 220px;
-    border-radius: none;
+    border-radius: 0;
     padding: 10px 10px;
     list-style: none;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: 0.3 ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -133,12 +141,13 @@ h1{
     /* background: rgba(255, 255, 255, 0.05); */
     color: #b30000;
 }
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu{
     opacity: 1;
     visibility: visible;
     transform: translateY(10px);
 }
-.qoute{
+.quote{
     background-color: #BD0C0A;
     padding: 80px 20px;
     text-align: center;
@@ -159,7 +168,7 @@ h1{
 form{
    background: #0f172a;
     padding: 120px 8%;
-    border-radius: none;
+    border-radius: 0;
 }
 .input-group{
     display: flex;

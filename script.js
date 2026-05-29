@@ -1,5 +1,6 @@
 window.addEventListener("scroll", function () {
   let navbar = document.getElementById("navbar");
+  if (!navbar) return;
 
   if (window.scrollY > 50) {
     navbar.classList.add("transparent");
