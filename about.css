@@ -120,7 +120,7 @@ a {
 }
 
 .dropdown-menu a {
-    display: block;
+    display: flex;
     padding: 10px 12px;
     color: white;
     font-weight: 500;
