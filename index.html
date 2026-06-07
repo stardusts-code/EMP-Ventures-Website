@@ -6,10 +6,11 @@
      <meta name="description" content="EMP Ventures provides professional security services, including guarding, CCTV monitoring, armed response, and event security.">
     <title>Home | EMP Ventures Security Services</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="script.js" defer></script>
    
 </head>
 <body>
@@ -31,6 +32,10 @@
             <span>EMP Ventures</span>
         </a>
 
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <nav class="navbar" id="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
@@ -38,8 +43,8 @@
                 <li class="dropdown">
                     <a href="Services.html">SERVICES</a>
                     <ul class="dropdown-menu">
-                        <li><a href="Gaurding.html">Guarding</a></li>
-                        <li><a href="monitering.html">CCTV Monitoring</a></li>
+                        <li><a href="Guarding.html">Guarding</a></li>
+                        <li><a href="Monitoring.html">CCTV Monitoring</a></li>
                         <li><a href="Events.html">Event Security</a></li>
                         <li><a href="Services.html#specialized">Armed Escorts</a></li>
                         <li><a href="CashTransit.html">Cash in Transit</a></li>
@@ -49,130 +54,144 @@
                     <a href="Reaction.html">REACTION</a>
                     <ul class="dropdown-menu">
                         <li><a href="rapid.html">Auto Dispatch</a></li>
-                        <li><a href="monitering.html">Off-site Monitoring</a></li>
+                        <li><a href="Monitoring.html">Off-site Monitoring</a></li>
                         <li><a href="Reaction.html">Armed Response</a></li>
                         <li><a href="ProactivePatrols.html">Proactive Patrols</a></li>
                     </ul>
                 </li>
                 <li><a href="Contact.html">CONTACT US</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61579485742280" class="icon" aria-label="EMP Ventures on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/emp-venture-" class="icon" aria-label="EMP Ventures on LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""></a></li>
             </ul>
         </nav>
 
-        <a href="#quote" class="btn">Get a Quote</a>
+        <a href="#quote" class="btn header-cta">Get a Quote</a>
     </header>
 
-<!-- hero section -->
-<section class="hero">
-    <div class="overlay"></div>
+    <main>
+        <section class="services-hero home-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Protecting what matters, together</p>
+                <h1>Professional Security Services</h1>
+                <p>
+                    We provide reliable and effective security services tailored to your needs.
+                    24/7 protection you can trust.
+                </p>
+                <div class="hero-actions">
+                    <a href="#quote" class="btn">Get a Quote</a>
+                    <a href="Services.html" class="btn outline">Our Services</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="hero-content">
-        <p class="top-text">PROTECTING WHAT MATTERS, TOGETHER.</p>
-        <h1>PROFESSIONAL<br>SECURITY SERVICES</h1>
-        <p class="desc">
-            We provide reliable and effective security services tailored to your needs.
-            24/7 protection you can trust.
-        </p>
-
-        <div class="buttons">
-            <a href="#quote" class="btn">Get a Quote</a>
-            <a href="Services.html" class="btn outline">Our Services</a>
-        </div>
-    </div>
-</section>
-
-
-<!-- info cards -->
-<section class="services">
-    <h2>Our Security Services</h2>
-
-    <div class="cards">
-
-        <div class="card card1">
-            <i class="fas fa-user-shield"></i>
-            <h3>Guarding Services</h3>
-            <p>Professional on-site officers provide patrols, access control, and visible deterrence.</p>
-            <a href="Gaurding.html" class="card-link">Learn More</a>
-        </div>
-            <div class="card card2">
-                <i class="fas fa-video"></i>
-                <h3>CCTV Monitoring</h3>
-                <p>Integrated CCTV and alarm monitoring supported by license plate recognition and control room escalation.</p>
-                <a href="monitering.html" class="card-link">Learn More</a>
+        <section class="services-overview" id="services">
+            <div class="section-heading">
+                <p class="eyebrow">What we provide</p>
+                <h2>Our Security Services</h2>
             </div>
 
-                <div class="card card3">
-                    <i class="fas fa-car"></i>
+            <div class="service-grid">
+                <article class="service-card">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>Guarding Services</h3>
+                    <p>Professional on-site officers provide patrols, access control, and visible deterrence.</p>
+                    <a href="Guarding.html">Learn more</a>
+                </article>
+
+                <article class="service-card">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>CCTV Monitoring</h3>
+                    <p>Integrated CCTV and alarm monitoring supported by license plate recognition and control room escalation.</p>
+                    <a href="Monitoring.html">Learn more</a>
+                </article>
+
+                <article class="service-card">
+                    <i class="fa-solid fa-car-side"></i>
                     <h3>Armed Response</h3>
                     <p>Licensed and trained officers equipped to respond to emergencies and operate in high-risk environments.</p>
-                    <a href="Reaction.html" class="card-link">Learn More</a>
-                </div>
+                    <a href="Reaction.html">Learn more</a>
+                </article>
 
-                <div class="card card4">
-                    <i class="fas fa-lock"></i>
+                <article class="service-card">
+                    <i class="fa-solid fa-bolt"></i>
                     <h3>Tactical Units</h3>
                     <p>Specialized rapid-response teams deployed for critical incidents and priority threats.</p>
-                    <a href="rapid.html" class="card-link">Learn More</a>
-                </div>
-                
-    </div>
-</section>
-<!-- more info -->
-<section class="why-choose-us" id="why-choose-us">
-    <h1>Why Choose Us?</h1>
-    <h3>At EMP Ventures we offer professional security services designed to protect what matters most.</h3>
-    <p>At EMP Ventures, we are committed to providing reliable and professional security services tailored to the needs of our clients. With a strong focus on safety, efficiency, and rapid response, our team helps protect your property, business, and people at all times.</p>
-</section>
+                    <a href="rapid.html">Learn more</a>
+                </article>
+            </div>
+        </section>
+        <section class="service-process" id="why-choose-us">
+            <div class="section-heading">
+                <p class="eyebrow">Why choose us</p>
+                <h2>Professional security designed to protect what matters most</h2>
+            </div>
+            <p class="process-intro">At EMP Ventures, we are committed to providing reliable and professional security services tailored to the needs of our clients. With a strong focus on safety, efficiency, and rapid response, our team helps protect your property, business, and people at all times.</p>
+        </section>
 
 
-<!-- what we offer -->
-<section class="offer-text">
-    <h1>AT EMP VENTURES</h1>
-    <h6>Your safety is our priority through trusted and professional security services.</h6>
-    <p>We believe that security comes from trust, professionalism, and rapid response. At EMP Ventures, our goal is to provide reliable protection services that give our clients peace of mind. Through vigilance and commitment, we strive to create safer environments for every client we serve.</p>
-  
+        <section class="about-emp">
+            <div class="section-heading section-heading--center">
+                <p class="eyebrow">At EMP Ventures</p>
+                <h2>Your safety is our priority</h2>
+                <p class="section-lead">We believe that security comes from trust, professionalism, and rapid response. Our goal is to provide reliable protection services that give our clients peace of mind through vigilance and commitment.</p>
+            </div>
+        </section>
 
-
-<!-- who we provide for -->
-   <h2>We provide for:</h2>
-   <div class="parent">
-        <div class="div1">
-        <h3><i class="fa-solid fa-check"></i> Corporate and Industrial</h3>
-        <p>Professional security services designed to protect businesses, warehouses, offices, and industrial facilities with reliable on-site protection and monitoring.</p>
-
-        <a class="learn-more-btn" href="Gaurding.html">Learn More</a>
-    </div>
-            <div class="div2">
-                <h3><i class="fa-solid fa-check"></i> Banks and Private Security</h3>
-                <p>Highly trained personnel providing secure protection services for financial institutions, private properties, and high-risk environments.</p>
-                <a class="learn-more-btn" href="Gaurding.html">Learn More</a>
+        <section class="audience-section">
+            <div class="section-heading section-heading--center">
+                <p class="eyebrow">Who we serve</p>
+                <h2>We provide for</h2>
             </div>
 
-                    <div class="div3">
-                        <h3><i class="fa-solid fa-check"></i> Residential Security</h3>
-                        <p>Dedicated security services focused on safeguarding homes, estates, and residential communities to ensure safety and peace of mind.</p>
-                        <a class="learn-more-btn" href="Gaurding.html">Learn More</a>
-                    </div>
-                            <div class="div4">
-                                <h3><i class="fa-solid fa-check"></i> Armed and Unarmed</h3>
-                                <p>Flexible protection solutions offering both armed and unarmed officers tailored to suit different environments and security requirements.</p>
-                                <a class="learn-more-btn" href="Gaurding.html">Learn More</a>
-                            </div>
-   </div>
+            <div class="audience-grid">
+                <article class="audience-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Corporate and Industrial</h3>
+                    <p>Professional security for businesses, warehouses, offices, and industrial facilities with reliable on-site protection and monitoring.</p>
+                    <a href="Guarding.html">Learn more</a>
+                </article>
 
-</section>
-   <section class="company-profile">
-    <h5>Download Our Company Profile</h5>
-    <a href="EMP Company Profile Presentation.pdf" class="download-button">Download</a>
-    
-   </section>
+                <article class="audience-card">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h3>Banks and Private Security</h3>
+                    <p>Highly trained personnel for financial institutions, private properties, and high-risk environments.</p>
+                    <a href="Guarding.html">Learn more</a>
+                </article>
+
+                <article class="audience-card">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>Residential Security</h3>
+                    <p>Dedicated protection for homes, estates, and residential communities to ensure safety and peace of mind.</p>
+                    <a href="Guarding.html">Learn more</a>
+                </article>
+
+                <article class="audience-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Armed and Unarmed</h3>
+                    <p>Flexible solutions with both armed and unarmed officers tailored to different environments and requirements.</p>
+                    <a href="Guarding.html">Learn more</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="profile-band">
+            <div class="profile-band-inner">
+                <div class="profile-copy">
+                    <p class="eyebrow">Company profile</p>
+                    <h2>Download our company profile</h2>
+                    <p>Get a full overview of EMP Ventures, our services, capabilities, and the team behind your protection.</p>
+                </div>
+                <a href="EMP Company Profile Presentation.pdf" class="btn profile-download" download>
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+            </div>
+        </section>
 
 <!-- more info -->
 <!-- quote section -->
         <section class="quote" id="quote">
             <div class="quote-container">
-                <form action="mailto:tatumkunert444@gmail.com" method="POST" enctype="text/plain">
+                <form action="mailto:info@empventure.co.za" method="POST" enctype="text/plain">
                     <h2>Request a Quote</h2>
                     <p>Tell us what you need protected and we will help you choose the right service.</p>
 
@@ -201,7 +220,9 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        </section> 
+        </section>
+ </main>
+
 <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -236,7 +257,8 @@
         </div>
     </footer>
 
-
-
+    <a href="https://wa.me/27794222004" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>

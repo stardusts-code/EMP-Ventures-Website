@@ -91,7 +91,9 @@ a {
 }
 
 .nav-links a:hover,
-.nav-links a:focus {
+.nav-links a:focus,
+.nav-links > li > a.active,
+.nav-links > li.dropdown > a.active {
     color: white;
 }
 
@@ -465,15 +467,6 @@ button:focus {
 }
 
 @media (max-width: 1050px) {
-    .header {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-    }
-
     .service-grid,
     .process-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,121 +1,171 @@
-*{
+* {
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+body {
     background-color: #f8fafc;
-    color: white;
+    color: #0f172a;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-.services{
+
+a {
+    color: inherit;
+}
+.services {
     padding: 80px 50px;
-    background: linear-gradient(to right, #050505, #0b1a35);
+    background: white;
     text-align: center;
     font-size: large;
     font-weight: bold;
 }
-.services h2{
+.services h2 {
     margin-bottom: 40px;
     font-size: 100px;
     font-weight: lighter;
-    color: white;
+    color: #111827;
     font-family: polymath;
     font-family: sans-serif;
 }
-.offer-text{
-    color: #BD0C00;
-    /* background-color: #03102a; */
-    background: linear-gradient(to right, #050505, #0b1a35);
-    
+.about-emp {
+    padding: 86px 8%;
+    background: white;
 }
-.offer-text h1{
+
+.section-heading--center {
+    max-width: 760px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 35px;
-    color: white;
-    padding: 25px;
-    margin-top: 0;
 }
-.offer-text h1::after{
-    content: "";
-    display: block;
-    width: 200px;
-    height: 3px;
-    background-color: red;
-    margin: 20px auto 0;
+
+.section-heading--center .eyebrow {
+    color: #ef4444;
 }
-.offer-text h6{
-    font-size: 20px;
-    text-align: center;
-    color: white;
+
+.section-lead {
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.7;
 }
-.offer-text p{
-     font-size: 20px;
-    max-width: 700px;
-    margin: auto;
-    color: lightgray;
-    line-height: 1.6;
-    margin-bottom: 50px;
+
+.audience-section {
+    padding: 86px 8%;
+    background: #f8fafc;
 }
-.offer-text h2{
-    text-align: center;
-    color: white;
-    font-size: 35px;
-}
-.offer-text h2::after{
-    content: "";
-    display: block;
-    width: 150px;
-    height: 3px;
-    background: red;
-    margin: 20px auto 0;
-}
-.parent {
+
+.audience-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 50px;
-    /* margin-bottom: 30px; */
-    color: white;
-    /* background-color: #03102a; */
-    background: linear-gradient(to right, #050505, #0b1a35);
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    transition: 0.5s;
-}
-    
-.div1 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
-.div2 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
+.audience-card {
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.div3 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 3;
+.audience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 55px rgba(15, 23, 42, 0.12);
 }
 
-.div4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 3;
+.audience-card i {
+    color: #bd0c0a;
+    font-size: 30px;
+    margin-bottom: 16px;
 }
-.learn-more-btn{
-    border: 1px solid #0b1a35;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 10px 16px;
-    background: #BD0C0A;
-    color: white;
+
+.audience-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 20px;
+}
+
+.audience-card p {
+    margin: 0 0 18px;
+    color: #475569;
+    line-height: 1.65;
+}
+
+.audience-card a {
+    color: #bd0c0a;
+    font-weight: 700;
     text-decoration: none;
+}
+
+.audience-card a:hover,
+.audience-card a:focus {
+    color: #111827;
+}
+
+.profile-band {
+    padding: 76px 8%;
+    background: #0f172a;
+    color: white;
+}
+
+.profile-band-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.profile-copy {
+    max-width: 640px;
+}
+
+.profile-copy .eyebrow {
+    color: #ef4444;
+}
+
+.profile-copy h2 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    line-height: 1.15;
+    color: white;
+}
+
+.profile-copy p {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.profile-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 12px 22px;
+    background: #bd0c0a;
+    color: white;
+    border: 1px solid #bd0c0a;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-download:hover,
+.profile-download:focus {
+    background: white;
+    color: #111827;
+    border-color: white;
 }
 .cards{
     display: grid;
@@ -172,56 +222,148 @@ body{
     grid-row-start: 3;
 }
 
-header{
-    /* background-color: #03102a; */
-    /* background-color: #050505; */
-    background: #020817;
-    color: #BD0C0A;
-    display: flex;
-      justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    /* padding: 20px 50px; */
-    /* background: rgba(0,0,0,0.7); */
-    /* margin: -15px; */
-    padding: 10px;
-}
-.hero{
-    height: 100vh;
-    background: url('/images/hero.image.png') center/cover no-repeat;
-    
-    width: auto;
-    position: relative;
+.services-hero,
+.page-hero {
+    min-height: 560px;
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 90px 8%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(2, 8, 23, 0.92), rgba(2, 8, 23, 0.64)),
+        url("images/Johannesburg_skyline_2017.jpg") center/cover no-repeat;
 }
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background: rgba(0, 0, 0, 0.7); */
-    top: 0;
-    left: 0;
+
+.home-hero {
+    background:
+        linear-gradient(90deg, rgba(2, 8, 23, 0.92), rgba(2, 8, 23, 0.58)),
+        url("images/hero.image.png") center/cover no-repeat;
 }
-.hero-content{
-    position: relative;
-    max-width: 600px;
+
+.hero-copy,
+.page-hero-content {
+    max-width: 740px;
 }
-.top-text{
-    color: red;
-    margin: 10px;
-    font-style: italic;
+
+.eyebrow,
+.top-text {
+    margin: 0 0 14px;
+    color: #ef4444;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
-.hero h1{
-    font-size: 50px;
-    margin-bottom: 20px;
+
+.services-hero h1,
+.page-hero h1 {
+    margin: 0 0 18px;
+    font-size: 56px;
+    line-height: 1.05;
 }
-.desc{
-    margin-bottom: 20px;
-    line-height: 1.5;
+
+.services-hero p:not(.eyebrow),
+.page-hero p:not(.eyebrow):not(.top-text) {
+    max-width: 640px;
+    color: #e5e7eb;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-actions,
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.services-overview,
+.service-process {
+    padding: 86px 8%;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 34px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    min-height: 260px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 55px rgba(15, 23, 42, 0.12);
+}
+
+.service-card i {
+    color: #bd0c0a;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+.service-card p {
+    min-height: 72px;
+    margin: 0 0 22px;
+    color: #475569;
+    line-height: 1.65;
+}
+
+.service-card a {
+    color: #bd0c0a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.service-card a:hover,
+.service-card a:focus {
+    color: #111827;
+}
+
+.service-process {
+    background: #0f172a;
+    color: white;
+}
+
+.service-process .section-heading h2 {
+    color: white;
+}
+
+.service-process .eyebrow {
+    color: #ef4444;
+}
+
+.process-intro {
+    max-width: 900px;
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.7;
 }
 .why-choose-us{
     /* background: url('/images/why-choose-us-image.jpeg') center/cover no-repeat; */
@@ -274,7 +416,7 @@ i{
 .top-bar a:hover{
     color: #BD0C00;
 }
- .header {
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -284,8 +426,13 @@ i{
     gap: 24px;
     padding: 12px 8%;
     background: #020817;
-    color: #bd0c0c;
- }
+    color: #bd0c0a;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
  .brand{
     display: flex;
     align-items: center;
@@ -300,20 +447,6 @@ i{
     height: auto;
     display: block;
  }
- /* .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    /* background-color: #03102a; */
-    /* background-color: #050505; */
-    /* backdrop-filter: blur(10px); */
-    /* background: rgba(2,8,23,0.9); */
-    /* background: #020817; */
-    /* position: sticky; */
-    /* top: 0;
-    z-index: 1000; */
- 
 .nav-links{
     display: flex;
     align-items: center;
@@ -330,12 +463,10 @@ i{
     text-decoration: none;
 }
 .nav-links a:hover,
-.nav-links a:focus{
+.nav-links a:focus,
+.nav-links > li > a.active,
+.nav-links > li.dropdown > a.active {
     color: white;
-}
-.navbar.transparent{
-    background-color: #020817;
-    backdrop-filter: blur(6px);
 }
 .icon i{ 
     font-size: 20px;
@@ -407,72 +538,15 @@ i{
     background: #111827;
     border-color: #111827;
 }
-.btn.outline{
+.btn.outline {
     background: transparent;
     border-color: rgba(255, 255, 255, 0.55);
 }
-.btn:hover,
-.btn:focus{
+
+.btn.outline:hover,
+.btn.outline:focus {
     background: white;
     color: #111827;
-}
-.quote {
-    background-color: #BD0C0A;
-    padding: 80px 20px;
-    text-align: center;
-}
-.quote-container{
-    max-width: 10000px;
-    margin: auto;
-}
-.quote h3{
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-.quote p{
-    color: white;
-    margin-bottom: 30px;
-}
-form{
-   background: #0f172a;
-    padding: 120px 8%;;
-    border-radius: 0;
-}
-.input-group{
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-.input-group input,
-.input-group select{
-    flex: 1;
-}
-input, select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: none;
-    outline: none;
-    /* background: #1a1a1a; */
-    border-radius: 5px;
-}
-textarea{
-    height: 120px;
-    margin-bottom: 15px;
-    resize: none;
-}
-button{
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #0f172a;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-button:hover{
-    color: darkred;
 }
 .footer {
     background: #020817;
@@ -521,62 +595,9 @@ button:hover{
     color: red;
     padding-left: 5px;
 }
-.company-profile{
-    background-color: #050505;
-    height: 15rem;
-    text-align: center;
-}
-.company-profile h5{
-    display: block;
-    text-align: center;
-    background-color: #050505;
-    font-size: 25px;
-    padding: 25px;
-    color: white;
-    margin-top: 0;
+.footer .logo {
+    width: 58px;
     margin-bottom: 0;
-}
-.company-profile h5::after{
-    content: "";
-    display: block;
-    width: 200px;
-    height: 3px;
-    background-color: red;
-    margin: 20px auto 0;
-}
-/* company profile */
-.download-button{
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 30px 8%;
-    padding: 15px;
-}
-.download-button a:hover{
-    color: red;
-}
-.download-button:hover{
-    color: red;
-}
-/* logo */
-.logo {
-    /* color: white; */
-    margin-bottom: 15px;
-    width: 7rem;
-    display: block;
-    object-fit: contain;
-}
-.logo i {
-    color: red;
-    margin-right: 8px;
-}
-.logo-name{
-    display: flex;
-    align-items: last baseline;
 }
 /* BOTTOM BAR */
 .footer-bottom {
@@ -586,18 +607,6 @@ button:hover{
     margin-top: 40px;
     font-size: 14px;
     color: #777;
-}
-
-/* Shared detail pages */
-.page-hero {
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    padding: 90px 8%;
-    color: white;
-    background:
-        linear-gradient(90deg, rgba(2, 8, 23, 0.92), rgba(2, 8, 23, 0.58)),
-        url("images/Johannesburg_skyline_2017.jpg") center/cover no-repeat;
 }
 
 .event-hero {
@@ -618,22 +627,6 @@ button:hover{
         url("images/hero.image.png") center/cover no-repeat;
 }
 
-.page-hero-content {
-    max-width: 720px;
-}
-
-.page-hero h1 {
-    margin: 0 0 18px;
-    font-size: 56px;
-    line-height: 1.05;
-}
-
-.page-hero p:not(.top-text) {
-    color: #e5e7eb;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
 .page-intro {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(280px, 560px);
@@ -646,8 +639,9 @@ button:hover{
 
 .section-kicker {
     margin: 0 0 12px;
-    color: #BD0C0A;
+    color: #ef4444;
     font-weight: 700;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
@@ -733,21 +727,44 @@ button:hover{
     }
 }
 
+@media (max-width: 1050px) {
+    .service-grid,
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-band-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-download {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 760px) {
+    .services-hero,
     .page-hero {
         min-height: auto;
-        padding: 70px 6%;
+        padding: 70px 5%;
     }
 
+    .services-hero h1,
     .page-hero h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
+    .services-overview,
+    .service-process,
+    .about-emp,
+    .audience-section,
+    .profile-band,
     .page-intro,
     .feature-grid-section,
     .detail-band {
-        padding-left: 6%;
-        padding-right: 6%;
+        padding: 60px 5%;
     }
 
     .page-intro,
@@ -758,6 +775,20 @@ button:hover{
     .detail-band {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .section-heading h2,
+    .profile-copy h2 {
+        font-size: 28px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
     }
 }
 

@@ -6,10 +6,11 @@
     <meta name="description" content="EMP Ventures provides proactive patrol services to deter crime, monitor risk areas, and support rapid security response.">
     <title>Proactive Patrols | EMP Ventures Security Services</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="top-bar">
@@ -24,6 +25,10 @@
             <span>EMP Ventures</span>
         </a>
 
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <nav class="navbar" id="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
@@ -31,8 +36,8 @@
                 <li class="dropdown">
                     <a href="Services.html">SERVICES</a>
                     <ul class="dropdown-menu">
-                        <li><a href="Gaurding.html">Guarding</a></li>
-                        <li><a href="monitering.html">CCTV Monitoring</a></li>
+                        <li><a href="Guarding.html">Guarding</a></li>
+                        <li><a href="Monitoring.html">CCTV Monitoring</a></li>
                         <li><a href="Events.html">Event Security</a></li>
                         <li><a href="Services.html#specialized">Armed Escorts</a></li>
                         <li><a href="CashTransit.html">Cash in Transit</a></li>
@@ -42,27 +47,26 @@
                     <a href="Reaction.html">REACTION</a>
                     <ul class="dropdown-menu">
                         <li><a href="rapid.html">Auto Dispatch</a></li>
-                        <li><a href="monitering.html">Off-site Monitoring</a></li>
+                        <li><a href="Monitoring.html">Off-site Monitoring</a></li>
                         <li><a href="Reaction.html">Armed Response</a></li>
                         <li><a href="ProactivePatrols.html">Proactive Patrols</a></li>
                     </ul>
                 </li>
                 <li><a href="Contact.html">CONTACT US</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61579485742280" class="icon" aria-label="EMP Ventures on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/emp-venture-" class="icon" aria-label="EMP Ventures on LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
 
-        <a href="#quote" class="btn">Get a Quote</a>
+        <a href="#quote" class="btn header-cta">Get a Quote</a>
     </header>
 
     <main>
         <section class="page-hero rapid-hero">
             <div class="page-hero-content">
-                <p class="top-text">VISIBLE PATROLS. EARLY DETERRENCE.</p>
+                <p class="eyebrow">VISIBLE PATROLS. EARLY DETERRENCE.</p>
                 <h1>Proactive Patrols</h1>
                 <p>Regular patrol support designed to deter criminal activity, identify risks early, and keep response teams alert.</p>
-                <div class="buttons">
+                <div class="hero-actions">
                     <a href="#quote" class="btn">Request Patrols</a>
                     <a href="Reaction.html" class="btn outline">Reaction Services</a>
                 </div>
@@ -112,7 +116,7 @@
 
         <section class="quote" id="quote">
             <div class="quote-container">
-                <form action="mailto:tatumkunert444@gmail.com" method="POST" enctype="text/plain">
+                <form action="mailto:info@empventure.co.za" method="POST" enctype="text/plain">
                     <h2>Request a Quote</h2>
                     <p>Tell us what you need protected and we will help you choose the right service.</p>
                     <div class="input-group">
@@ -142,5 +146,43 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="images/emp-logo-transparent.png" alt="EMP Ventures logo" class="logo">
+                    <h3>EMP Ventures</h3>
+                </div>
+                <p class="slogan">Protecting what matters, together</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i>087 265 3145</p>
+                <p><i class="fas fa-phone"></i>079 422 2004</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:info@empventure.co.za">info@empventure.co.za</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:admin@empventure.co.za">admin@empventure.co.za</a></p>
+                <p><i class="fas fa-map-marker-alt"></i>5 Sundowner Plaza, 1 Apollo Road, Randburg, 2188</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Emergency &amp; Important</h3>
+                <p><i class="fas fa-shield-alt"></i>SAPS: 10111</p>
+                <p><i class="fas fa-shield-alt"></i>Crime Stop: 08600 10111</p>
+                <p><i class="fas fa-shield-alt"></i>JMPD: 011 375 5918</p>
+                <p><i class="fas fa-shield-alt"></i>Fire Department: 1077</p>
+                <p><i class="fas fa-shield-alt"></i>ER24: 084 124</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 EMP Ventures Security Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/27794222004" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>
