@@ -353,7 +353,6 @@ html{
 .footer {
     background: #020817;
     color: #ccc;
-    /* padding-top: 60px; */
     padding: 80px 8% 30px;
 }
 
@@ -397,10 +396,7 @@ html{
     color: red;
     padding-left: 5px;
 }
-
-/* LOGO */
 .logo {
-    /* color: white; */
     margin-bottom: 15px;
     width: 7rem;
 }
@@ -409,8 +405,6 @@ html{
     color: red;
     margin-right: 8px;
 }
-
-/* BOTTOM BAR */
 .footer-bottom {
     border-top: 1px solid #111;
     text-align: center;
@@ -419,8 +413,6 @@ html{
     font-size: 14px;
     color: #777;
 }
-
-/* Services-style footer */
 .footer {
     padding: 70px 8% 28px;
     background: #020817;

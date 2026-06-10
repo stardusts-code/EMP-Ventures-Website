@@ -175,7 +175,6 @@ a {
     
 }
 .card{
-    /* background-color: #BD0C00; */
     padding: 20px;
     margin: 30px;
     border: 2px solid #BD0C00;
@@ -366,7 +365,6 @@ a {
     line-height: 1.7;
 }
 .why-choose-us{
-    /* background: url('/images/why-choose-us-image.jpeg') center/cover no-repeat; */
     background: linear-gradient(to right, #BD0C00, #050505);
     padding: 80px 20px;
     text-align: center;
@@ -551,7 +549,6 @@ i{
 .footer {
     background: #020817;
     color: #ccc;
-    /* padding-top: 60px; */
     padding: 80px 8% 30px;
 }
 
@@ -599,7 +596,6 @@ i{
     width: 58px;
     margin-bottom: 0;
 }
-/* BOTTOM BAR */
 .footer-bottom {
     border-top: 1px solid #111;
     text-align: center;
@@ -791,8 +787,6 @@ i{
         text-align: center;
     }
 }
-
-/* Services-style footer */
 .footer {
     padding: 70px 8% 28px;
     background: #020817;
